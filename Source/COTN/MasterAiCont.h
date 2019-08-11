@@ -22,15 +22,33 @@ private:
 	UPROPERTY(BlueprintEditable)
 	bool IsRaisable, IsFearless, IsCloseCombat, CanDropTreasure, CanHide, CanStun, HeroStun, CanSummon;
 
-	UPROPERTY(BlueprintReadOnly)
+	/*Functions*/
+
+	UPROPERTY(BlueprintCallable)
 	void TakeDamage(double);
+
+	UPROPERTY(BlueprintCallable)
 	void Death(); //may change to float for death time response to game mode
+
+	UPROPERTY(BlueprintCallable)
 	void Runaway();
+
+	UPROPERTY(BlueprintCallable)
 	void Stomp();
+
+	UPROPERTY(BlueprintCallable)
 	void ConeAttack();
+
+	UPROPERTY(BlueprintCallable)
 	void Summon();
+
+	UPROPERTY(BlueprintCallable)
 	void SeeHiddenUnits();
+
+	UPROPERTY(BlueprintCallable)
 	void ChargeAttack();
+
+	UPROPERTY(BlueprintCallable)
 	void TargetStun();
 
 	

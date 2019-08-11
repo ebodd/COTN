@@ -8,11 +8,15 @@ void AMasterAiCont::TakeDamage(double a)
 	//get enmey attack 
 	//get 'player' health 
 	//get 'player' armour
-	if (Health <= 0)
-		Death();
-	else if
-		(Armour - AttackDamage) - Health;
-		 //set new health
+	//may need to acertain if hit hit box first health check not really helful maybe nested if
+	if ()
+		if (Health <= 0)
+			Death();
+		else
+			(Armour - a) - Health;
+	//set new health;
+	else
+		return;
 }
 
 void AMasterAiCont::Death()
